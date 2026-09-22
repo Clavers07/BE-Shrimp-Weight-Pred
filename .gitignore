@@ -1,0 +1,39 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Logs
+logs/*.log
+*.log
+!logs/.gitkeep
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# ML Model Weights (Optional - uncomment if weights are large/external)
+# weights/*.pt
