@@ -4,13 +4,32 @@ Backend API Flask untuk segmentasi udang (YOLOv8-Seg / YOLO26n-Seg) dan estimasi
 
 ## 🚀 Cara Menjalankan Backend
 
-### 1. Aktivasi Virtual Environment
+### 1. Buat & Aktivasi Virtual Environment
 ```powershell
+# Masuk ke folder backend
 cd backend
-.\venv\Scripts\activate
+
+# Buat virtual environment (hanya dilakukan sekali saat pertama kali clone/fork)
+python -m venv venv
+
+# Aktivasi Virtual Environment
+.\venv\Scripts\activate       # Windows (PowerShell)
+# source venv/bin/activate   # Linux / macOS
 ```
 
-### 2. Jalankan Server Flask
+### 2. Install Dependensi
+```powershell
+pip install -r requirements.txt
+```
+
+### 3. Setup Environment Variables (`.env`)
+```powershell
+# Copy template .env.example menjadi .env
+copy .env.example .env        # Windows
+# cp .env.example .env        # Linux / macOS
+```
+
+### 4. Jalankan Server Flask
 ```powershell
 python app.py
 ```
